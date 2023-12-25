@@ -59,7 +59,12 @@ class YouTubeUpdater:
                 resp = json.load(response)
                 try:
                     vid_id = resp['items'][0]['id']['videoId']
-                except:
+                except urllib.error.HTTPError as e:
+                    print(f"HTTP Error: {e}")
+                    vid_id = None
+    
+                except (json.JSONDecodeError, KeyError, IndexError):
+                    print("Error decoding JSON or missing keys/indexes")
                     vid_id = None
 
             with open('result_.json', 'r') as json_file:
