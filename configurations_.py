@@ -28,7 +28,7 @@ class Config:
                                         # dont use large number of channels as it may exceed free quota
                                         
     SLEEP_TIME = 900  # How much time to wait in seconds before making API call?
-                      # 900 seconds wait time is perfect for free quota per day considering only 1 channel
+                      # 900 seconds ( 15 minutes ) wait time is perfect for free quota per day considering only 1 channel
 
 if __name__=="__main__":
     config = Config()
