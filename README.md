@@ -14,7 +14,7 @@ A simple Python script that checks for new videos uploaded to specified YouTube 
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/GentleClash/yt-tg-watcher.git
-   cd YouTube-Telegram-Notifier
+   cd yt-tg-watcher
    ```
 
 2. **Install Dependencies:**
